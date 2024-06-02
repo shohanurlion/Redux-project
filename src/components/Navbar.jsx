@@ -15,7 +15,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="bg-indigo-900 text-white">
+    <nav className="bg-indigo-900 text-white position-fixed">
       <div className="navbar max-w-7xl mx-auto">
         {/* logo */}
         <div className="flex-1">
