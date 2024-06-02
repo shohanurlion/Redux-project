@@ -1,3 +1,4 @@
+import "../App.css"
 import Navimg from '../assets/liton.jpg'
 import { useDispatch, useSelector } from "react-redux";
 const Navbar = () => {
@@ -15,7 +16,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="bg-indigo-900 text-white position-fixed">
+    <nav className=" text-white custom">
       <div className="navbar max-w-7xl mx-auto">
         {/* logo */}
         <div className="flex-1">
@@ -28,7 +29,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex-none space-x-4">
-          <div className="dropdown dropdown-end font-semibold">
+          <div className="dropdown dropdown-end font-semibold position-fixed">
             <button onClick={() => handlePageChange("HOME")}>Home</button>
           </div>
           {/* cart item */}
